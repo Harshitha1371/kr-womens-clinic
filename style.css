@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* BASE */
 body {
   margin: 0;
@@ -229,4 +230,286 @@ footer {
     font-size: 22px;
   }
 
+=======
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #fff0f5, #ffe4ec);
+  overflow-x: hidden;
+}
+
+/* IMAGE FIX */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* NAV */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #c2185b;
+}
+
+.whatsapp {
+  background: #c2185b;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* PREMIUM HEADINGS */
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 42px;
+  color: #c2185b;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+h3, h4 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* HERO */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: url("images/bg1.png") center/cover no-repeat;
+}
+
+.tagline {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* BUTTON */
+.primary {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #c2185b, #e91e63);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  padding: 50px;
+  gap: 30px;
+  align-items: center;
+}
+
+.about img {
+  width: 220px;
+  border-radius: 12px;
+}
+
+/* SERVICES */
+.services {
+  padding: 50px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 60px;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(135deg, #f8bbd0, #f48fb1);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* ANIMATION */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* NAVBAR */
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+}
+
+#navbar.scrolled {
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== MOBILE EDITION ===== */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  /* NAVBAR */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  .whatsapp {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 50px 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .tagline {
+    font-size: 14px;
+  }
+
+  .conditions {
+    font-size: 14px;
+  }
+
+  .primary {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px;
+  }
+
+  /* ABOUT */
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
+  }
+
+  .about img {
+    width: 180px;
+  }
+
+  /* SERVICES */
+  .services {
+    padding: 30px 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card img {
+    width: 50px;
+  }
+
+  /* CONTACT */
+  .contact {
+    padding: 30px 15px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .primary {
+    width: 100%;
+  }
+
+}
+
+/* Smooth tap feel */
+button, a {
+  transition: 0.2s;
+}
+
+button:active, a:active {
+  transform: scale(0.96);
+>>>>>>> cd70bba26c390af3a5b61a129b9fc369ee8ea2ff
 }
